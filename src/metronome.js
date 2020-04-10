@@ -177,7 +177,7 @@ class Metronome extends React.Component {
         0.001
       )
       gainNode.gain.setTargetAtTime(
-        this.props.beatVolume,
+        this.props.subdivisionVolume,
         this.audioContext.currentTime,
         0.001
       )

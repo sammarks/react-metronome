@@ -198,7 +198,7 @@ var Metronome$1 = function (_React$Component) {
       if (isQuarterBeat) {
         playTick = true;
         osc.frequency.setTargetAtTime(_this.props.subdivisionFrequency, _this.audioContext.currentTime, 0.001);
-        gainNode.gain.setTargetAtTime(_this.props.beatVolume, _this.audioContext.currentTime, 0.001);
+        gainNode.gain.setTargetAtTime(_this.props.subdivisionVolume, _this.audioContext.currentTime, 0.001);
       }
 
       if (isFirstBeat) {
